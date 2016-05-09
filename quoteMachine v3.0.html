@@ -1,0 +1,55 @@
+<<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quote Machine</title>
+ 		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+			integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link type="text/css" rel="stylesheet" href="quoteMachine3.css">
+	</head>
+
+	<body>
+		<div class="container centered">
+
+			<div class="jumbotron text-center">
+				<h2>"Quotable"</h2>
+	 
+				<blockquote id="quoteblock">
+
+					<em><p id="quote-content"></p></em>
+
+					<footer id="quote-author"></footer>
+
+				</blockquote>
+
+		  		<p class="centered"><button class="btn btn-primary btn-lg" id="reset-button">Get Another Quote</button></p>
+				<a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-dnt="true" text="custom%20share%20text">Tweet</a>
+
+			</div>
+		</div>
+
+
+	</body>
+	<footer>
+		
+
+		<!-- include jQuery --> 
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+		integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+		<script type="text/javascript" src="quoteMachineJS v3.0.js"></script>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	<!--	<script type="text/javascript" charset="utf-8">
+	   		function format_quote(data){
+	      		return "<a href='"data.permalink"'>"data.quote
+	      			"<span class='author'>"data.author"</span></a>";
+	   		}
+		</script>
+	-->
+
+	</footer>
+</html>
